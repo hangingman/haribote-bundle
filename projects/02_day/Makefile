@@ -1,4 +1,4 @@
-SUBDIRS = 01_day 02_day
+SUBDIRS = helloos3 helloos4 helloos5
 
 all : $(SUBDIRS)
 
