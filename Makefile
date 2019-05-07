@@ -30,6 +30,8 @@ deps:
 	$(QEMU) $(QEMU_OPT) projects/02_day/helloos4/ipl.obj
 02_day_helloos5_ipl_run:
 	$(QEMU) $(QEMU_OPT) projects/02_day/helloos5/ipl.obj
+03_day_harib00a_ipl_run:
+	$(QEMU) $(QEMU_OPT) projects/03_day/harib00a/ipl.obj
 
 
 
