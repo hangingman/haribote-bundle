@@ -1,4 +1,4 @@
-SUBDIRS = harib00a
+SUBDIRS = harib00a harib00b harib00c
 
 all : $(SUBDIRS)
 
