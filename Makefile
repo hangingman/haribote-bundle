@@ -19,7 +19,9 @@ $(SUBDIRS) : FORCE
 	make -C $@ $(MAKECMDGOALS)
 
 deps:
-	$(GOGET) -u github.com/hangingman/gosk
+	$(GOGET) -u github.com/hangingman/gosk/cmd/gosk
+	$(GOGET) -u github.com/hangingman/gosk/cmd/f12format
+	$(GOGET) -u github.com/hangingman/gosk/cmd/f12copy
 
 01_day_helloos1_helloos_run:
 	$(QEMU) $(QEMU_OPT) projects/01_day/helloos1/helloos.obj
