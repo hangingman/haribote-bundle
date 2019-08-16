@@ -7,7 +7,8 @@ GOGET=$(GOCMD) get
 
 # Project parameters
 SUBDIRS = projects
-QEMU = qemu-system-i386
+#QEMU = qemu-system-i386
+QEMU = /mingw32/bin/qemu-system-i386
 QEMU_OPT = -m 32 -vga std -fda
 
 all : deps $(SUBDIRS)
@@ -36,6 +37,10 @@ deps:
 	$(QEMU) $(QEMU_OPT) projects/03_day/harib00b/ipl.obj
 03_day_harib00c_ipl_run:
 	$(QEMU) $(QEMU_OPT) projects/03_day/harib00c/ipl.obj
+03_day_harib00d_ipl_run:
+	$(QEMU) $(QEMU_OPT) projects/03_day/harib00d/ipl.obj
+03_day_harib00e_ipl_run:
+	$(QEMU) $(QEMU_OPT) projects/03_day/harib00e/ipl.obj
 
 
 
