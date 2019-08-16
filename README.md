@@ -12,20 +12,13 @@ Go言語ではりぼてOSを動作させる環境を作る
 
 ## インストール（開発者向け）
 
-- Makefileをcmakeで処理する
+- msys2上の環境を想定
 
 ```
-// example
-# apt-get install cmake ninja*
-
-$ mkdir build
-$ cd build
-
-# if you use Unix environment
-$ cmake -G "Unix Makefiles" ..
+// ビルドと準備
+$ pacman -S mingw32/mingw-w64-i686-qemu
 $ make
 
-# if you can use Ninja
-$ cmake -G Ninja ..
-$ ninja
+// qemuで実行
+$ make 01_day_helloos1_helloos_run
 ```
